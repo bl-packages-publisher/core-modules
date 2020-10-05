@@ -6,7 +6,7 @@
   "scripts": {
     "lint:fix": "lerna run lint:fix",
     "lint": "lerna run lint",
-    "publish-npm": "publish && lerna run publish-npm",
+    "publish-npm": "yarn publish && lerna run publish-npm",
     "publish": "lerna publish --conventional-commits --no-verify-access --loglevel=silly",
     "test": "lerna run test"
   },
