@@ -9,9 +9,10 @@
     "build:cjs": "tsc",
     "build:clean": "rm -rf ./lib-cjs",
     "build": "yarn build:clean && yarn build:cjs",
-    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "npx tsc"
+    "lint": "eslint .",
+    "prepare": "npx tsc",
+    "publish-npm": "npm publish --access public"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.3.0",

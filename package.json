@@ -4,9 +4,11 @@
   "description": "bl core modules",
   "license": "MIT",
   "scripts": {
-    "test": "lerna run test",
+    "lint:fix": "lerna run lint:fix",
     "lint": "lerna run lint",
-    "lint:fix": "lerna run lint:fix"
+    "publish-npm": "publish && lerna run publish-npm",
+    "publish": "lerna publish --conventional-commits --no-verify-access --loglevel=silly",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
