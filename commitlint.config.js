@@ -7,6 +7,7 @@ module.exports = {
     '@commitlint/config-conventional',
     '@commitlint/config-lerna-scopes',
   ],
+  ignores: [(message) => message.includes('@bl/')],
   rules: {
     'scope-enum': async (ctx) => {
       const scopes = await getPackages(ctx);
