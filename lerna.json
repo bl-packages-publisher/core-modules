@@ -1,6 +1,12 @@
 {
+  "command": {
+    "publish": {
+      "allowBrunch": ["main"]
+    }
+  },
   "npmClient": "yarn",
+  "npmClientArgs": ["--production", "--no-optional"],
   "packages": ["packages/*"],
   "useWorkspaces": true,
-  "version": "0.0.0"
+  "version": "independent"
 }
