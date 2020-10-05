@@ -1,5 +1,5 @@
 {
-  "name": "@bl/eslint-config-base",
+  "name": "@bl-packs/eslint-config-base",
   "version": "0.0.3",
   "main": "dist/index.js",
   "module": "dist/index.js",
