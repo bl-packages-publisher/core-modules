@@ -19,15 +19,17 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'warn',
     'arrow-body-style': ['error', 'always'],
     'arrow-parens': ['error', 'always'],
+    'class-methods-use-this': 'off',
     'comma-dangle': ['error', 'always-multiline'],
+    'import/extensions': ['error', 'never'],
     'import/order': [
-      'error',
+      'warn',
       {
         alphabetize: {
           order: 'asc',
           caseInsensitive: true,
         },
-        groups: ['builtin', 'parent', 'sibling', 'index', 'object'],
+        groups: [['builtin', 'external'], ['internal']],
         'newlines-between': 'always',
       },
     ],
@@ -47,5 +49,14 @@ module.exports = {
       { blankLine: 'always', next: 'while', prev: '*' },
       { blankLine: 'any', next: ['const', 'let'], prev: ['const', 'let'] },
     ],
+    'sort-keys': ['error', 'asc', { caseSensitive: false }],
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts'],
+    },
+    'import/resolver': {
+      typescript: {},
+    },
   },
 };
