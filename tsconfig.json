@@ -13,7 +13,7 @@
     "moduleResolution": "node",
     "noEmitHelpers": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "pretty": true,
     "removeComments": true,
     "sourceMap": false,
