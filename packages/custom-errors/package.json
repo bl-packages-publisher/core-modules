@@ -1,6 +1,6 @@
 {
   "name": "@bl-packs/custom-errors",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "author": "bl-packages <bl.ilya.marozau@gmail.com>",
   "homepage": "",
@@ -25,7 +25,7 @@
     "publish-npm": "npm publish --access public"
   },
   "devDependencies": {
-    "@bl-packs/eslint-config-base": "^0.0.7",
+    "@bl-packs/eslint-config-base": "^0.0.8",
     "@types/eslint": "^7.2.3",
     "@types/express": "^4.17.8",
     "@types/prettier": "^2.1.1",
