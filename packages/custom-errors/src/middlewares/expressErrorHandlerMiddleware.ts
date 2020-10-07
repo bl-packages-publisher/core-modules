@@ -10,13 +10,12 @@ export const expressErrorHandlerMiddleware = (
   next: NextFunction,
 ): void => {
   if (error instanceof CustomError) {
-    const { httpCode, code, message, name } = error;
+    const { httpCode, code, message } = error;
 
     res.status(httpCode || INTERNAL_SERVER_ERROR);
     res.json({
       code,
       message,
-      name,
     });
   } else {
     const { message, response, status, statusCode }: any = error;
