@@ -22,6 +22,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'comma-dangle': ['error', 'always-multiline'],
     'import/extensions': ['error', 'never'],
+    'import/no-cycle': 'off',
     'import/order': [
       'warn',
       {
@@ -29,8 +30,16 @@ module.exports = {
           order: 'asc',
           caseInsensitive: true,
         },
-        groups: [['builtin', 'external'], ['internal']],
+        groups: [
+          ['builtin', 'external'],
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
         'newlines-between': 'always',
+        pathGroups: [{ group: 'internal', pattern: '~/**' }],
+        pathGroupsExcludedImportTypes: [],
       },
     ],
     'import/prefer-default-export': 'off',
